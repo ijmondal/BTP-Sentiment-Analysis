@@ -113,6 +113,7 @@ with open(TF_IDF_CSV_FILENAME, 'w', encoding="utf-8", newline='') as csvfile:
         for entry in iterrow1:
             entry = float(entry) * float(row2[1])
             rowOut.append(entry)
+        print(rowOut)
         writer.writerow(rowOut)
     
 print("Done.")
